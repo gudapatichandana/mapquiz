@@ -7,13 +7,10 @@
 
 A comprehensive offline quiz application for Computer Science students to prepare for technical interviews and exams. Built with Flutter, featuring beautiful animations, progress tracking, and achievement systems.
 
-## 📱 Screenshots
-
-[Add screenshots here when available]
-
 ## ✨ Features
 
 ### 🎯 Core Features
+
 - **7 Subject Areas**: DSA, DBMS, Operating Systems, Computer Networks, OOP, Aptitude, and HR
 - **Daily Quiz**: Mixed questions from all subjects
 - **Offline First**: Works completely offline with local data storage
@@ -22,6 +19,7 @@ A comprehensive offline quiz application for Computer Science students to prepar
 - **Streak Tracking**: Maintain daily quiz streaks
 
 ### 📊 Progress & Analytics
+
 - Real-time score tracking
 - Subject-wise performance charts
 - Average score calculations
@@ -29,6 +27,7 @@ A comprehensive offline quiz application for Computer Science students to prepar
 - Quiz history with detailed reviews
 
 ### 🎨 UI/UX Features
+
 - Beautiful gradient backgrounds
 - Smooth animations and transitions
 - Responsive design (Mobile, Tablet, Desktop)
@@ -37,6 +36,7 @@ A comprehensive offline quiz application for Computer Science students to prepar
 - Progress indicators and timers
 
 ### 👤 User Management
+
 - Local authentication system
 - Multiple user accounts
 - Profile customization
@@ -55,22 +55,26 @@ A comprehensive offline quiz application for Computer Science students to prepar
 ### Installation
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/yourusername/cs-prep.git
 cd cs-prep
 ```
 
 2. **Install dependencies**
+
 ```bash
 flutter pub get
 ```
 
 3. **Generate Hive adapters**
+
 ```bash
 flutter packages pub run build_runner build
 ```
 
 4. **Run the app**
+
 ```bash
 flutter run
 ```
@@ -78,30 +82,32 @@ flutter run
 ## 📦 Dependencies
 
 ### Core Dependencies
+
 ```yaml
 dependencies:
   flutter:
     sdk: flutter
-  
+
   # State Management
   provider: ^6.1.1
-  
+
   # Local Storage
   hive: ^2.2.3
   hive_flutter: ^1.1.0
-  
+
   # UI Components
   google_fonts: ^6.1.0
   flutter_animate: ^4.3.0
   flutter_spinkit: ^5.2.0
   fl_chart: ^0.65.0
-  
+
   # Utilities
   intl: ^0.18.1
   uuid: ^4.2.1
 ```
 
 ### Dev Dependencies
+
 ```yaml
 dev_dependencies:
   flutter_test:
@@ -153,18 +159,21 @@ lib/
 ## 🎮 How to Use
 
 ### First Time Setup
+
 1. Launch the app
 2. Create an account (works offline)
 3. Choose your name and email
 4. Start taking quizzes!
 
 ### Taking a Quiz
+
 1. Select a subject from the home screen
 2. Answer 5 questions within the time limit
 3. Review your answers after submission
 4. Earn points and unlock achievements
 
 ### Tracking Progress
+
 1. View your profile from the home screen
 2. Check your stats and achievements
 3. Review previous quiz attempts
@@ -173,6 +182,7 @@ lib/
 ## 🏆 Achievement System
 
 ### Available Achievements
+
 - **First Steps**: Complete your first quiz
 - **Week Warrior**: 7-day streak
 - **Monthly Master**: 30-day streak
@@ -186,26 +196,33 @@ lib/
 ## 📊 Scoring System
 
 ### Base Points: 100
+
 **Accuracy Bonuses:**
+
 - 90%+ accuracy: +50 points
 - 80%+ accuracy: +25 points
 
 **Speed Bonus:**
+
 - Complete in <80% of time: +25 points
 
 **Perfect Score:**
+
 - 100% accuracy: +100 bonus points
 
 ## 🎨 Customization
 
 ### Adding New Subjects
+
 1. Edit `quiz_service.dart`
 2. Add questions to `_questionBank`
 3. Update `SubjectConstants` in `constants.dart`
 4. Add subject icon and color
 
 ### Modifying UI Theme
+
 Edit `main.dart` theme configuration:
+
 ```dart
 ThemeData(
   colorScheme: ColorScheme.fromSeed(
@@ -218,14 +235,18 @@ ThemeData(
 ## 🔧 Configuration
 
 ### Quiz Settings
+
 Edit `constants.dart` to modify:
+
 - Question count per quiz
 - Time limits
 - Point thresholds
 - Achievement requirements
 
 ### Storage Settings
+
 Configure Hive boxes in `local_storage_service.dart`:
+
 - User data
 - Quiz history
 - Questions bank
@@ -234,6 +255,7 @@ Configure Hive boxes in `local_storage_service.dart`:
 ## 🌐 Responsive Design
 
 The app supports three layout modes:
+
 - **Mobile**: < 600px width
 - **Tablet**: 600px - 1200px width
 - **Desktop**: > 1200px width
@@ -245,6 +267,7 @@ Layouts automatically adjust based on screen size.
 ### Common Issues
 
 **Build errors after cloning:**
+
 ```bash
 flutter clean
 flutter pub get
@@ -252,10 +275,12 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 ```
 
 **Hive initialization errors:**
+
 - Ensure `hive_flutter` is properly initialized in `main.dart`
 - Check that all adapters are registered
 
 **Questions not loading:**
+
 - Verify `populateLocalQuestions()` is called in `main.dart`
 - Check local storage initialization
 
@@ -270,6 +295,7 @@ Contributions are welcome! Please follow these steps:
 5. Open a Pull Request
 
 ### Code Style
+
 - Follow Flutter/Dart style guidelines
 - Use meaningful variable names
 - Add comments for complex logic
@@ -278,10 +304,6 @@ Contributions are welcome! Please follow these steps:
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
 
 ## 🙏 Acknowledgments
 
@@ -293,13 +315,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 For questions or feedback:
+
 - Create an issue on GitHub
-- Email: your.email@example.com
-- Twitter: [@yourhandle](https://twitter.com/yourhandle)
+- Email: gudapatichandana53@gmail.com
 
 ## 🗺️ Roadmap
 
 ### Version 2.0 (Planned)
+
 - [ ] Cloud sync support
 - [ ] Multiplayer quiz battles
 - [ ] Leaderboards
@@ -311,6 +334,7 @@ For questions or feedback:
 - [ ] Multiple language support
 
 ### Version 1.1 (Current)
+
 - [x] Offline functionality
 - [x] 7 subjects
 - [x] Achievement system
@@ -325,7 +349,5 @@ For questions or feedback:
 - **Platform Support**: Android, iOS, Web
 
 ---
-
-Made with ❤️ using Flutter
 
 **Star ⭐ this repository if you find it helpful!**
