@@ -1,19 +1,19 @@
 #!/bin/bash
-
-# Fail on first error
 set -e
 
-echo "🚀 Installing Flutter SDK..."
+echo "🚀 Setting up Flutter for Vercel build..."
+
+# Download Flutter SDK (only stable channel, shallow clone for speed)
 git clone https://github.com/flutter/flutter.git -b stable --depth 1
 export PATH="$PATH:`pwd`/flutter/bin"
 
-echo "✅ Flutter version check"
+# Check Flutter version
 flutter --version
 
-echo "📦 Running flutter pub get"
+# Get project dependencies
 flutter pub get
 
-echo "🌐 Building Flutter web release"
+# Build the web release
 flutter build web --release
 
-echo "🎯 Build complete — output in build/web"
+echo "✅ Flutter web build complete — output in build/web"
