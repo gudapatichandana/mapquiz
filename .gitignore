@@ -1,0 +1,28 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+build/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+android/.gradle/
+android/app/build/
+ios/Pods/
+macos/Pods/
+windows/build/
+linux/build/
+web/.dart_tool/
+web/build/
+*.lock
+.idea/
+.vscode/
+*.iml
+
+# Misc
+*.log
+*.tmp
+*.swp
+.DS_Store
+*.apk
+*.ipa
+*.aab
